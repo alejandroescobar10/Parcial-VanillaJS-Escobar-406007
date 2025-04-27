@@ -7,16 +7,43 @@ document.addEventListener("DOMContentLoaded", function() {
             const doc = new jsPDF();
 
             // Añadir contenido al PDF
-            doc.setFontSize(18);
-            doc.text("Mi CV", 10, 10); // Título
+            // Descripción breve
             doc.setFontSize(12);
             doc.text("Descripción de mi CV:", 10, 20);
-            doc.text("Desarrollador de software apasionado por la tecnología.", 10, 30);
-            doc.text("Contacto:", 10, 40);
-            doc.text("📞 319 4146005", 10, 50);
-            doc.text("Enlaces útiles:", 10, 60);
-            doc.text("- Educación", 20, 70);
-            doc.text("- Experiencia", 20, 80);
+            doc.text("Desarrollador de software apasionado por crear soluciones innovadoras, con enfoque en calidad, eficiencia y aprendizaje continuo.", 10, 30);
+
+            // Contacto
+            doc.text("Contacto:", 10, 50);
+            doc.text("📞 3127100080", 10, 60);
+
+            // Enlaces útiles
+            doc.text("Secciones:", 10, 75);
+            doc.text("- Educación", 20, 85);
+            doc.text("- Experiencia", 20, 95);
+
+            // Educación
+            doc.text("Educación:", 10, 110);
+            doc.text("- Formación profesional:", 20, 120);
+            doc.text("  Tecnólogo en Desarrollo de Software", 30, 128);
+            doc.text("  Universidad Unicatólica (Cursando)", 30, 136);
+
+            doc.text("- Secundaria:", 20, 148);
+            doc.text("  Bachiller técnico en Diseño Gráfico", 30, 156);
+            doc.text("  Liceo Napolitano (2020)", 30, 164);
+
+            // Experiencia laboral
+            doc.text("Experiencia Laboral:", 10, 180);
+            doc.text("- Practicante de desarrollo de software", 20, 190);
+            doc.text("  Pontificia Universidad Javeriana Cali", 30, 198);
+            doc.text("  Funciones: Migración a Docker, consultas BD, apoyo a requerimientos.", 30, 206);
+
+            doc.text("- Técnico en sistemas", 20, 218);
+            doc.text("  Electrosolutions", 30, 226);
+            doc.text("  Funciones: Instalación de cámaras, cableado, mantenimiento HW/SW.", 30, 234);
+
+            doc.text("- Desarrollador de Software Junior", 20, 246);
+            doc.text("  Qdit S.A.S", 30, 254);
+            doc.text("  Funciones: Desarrollo Frontend/Backend, debugging, documentación.", 30, 262);
 
             // Descargar el archivo PDF
             doc.save("Mi_CV.pdf");
