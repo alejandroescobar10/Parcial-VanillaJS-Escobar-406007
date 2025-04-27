@@ -10,11 +10,12 @@ document.addEventListener("DOMContentLoaded", function() {
             // Descripción breve
             doc.setFontSize(12);
             doc.text("Descripción de mi CV:", 10, 20);
-            doc.text("Desarrollador de software apasionado por crear soluciones innovadoras, con enfoque en calidad, eficiencia y aprendizaje continuo.", 10, 30);
+            doc.text("Desarrollador de software apasionado por crear soluciones innovadoras,"
+                + "con enfoque en calidad, eficiencia y aprendizaje continuo.", 10, 30);
 
             // Contacto
             doc.text("Contacto:", 10, 50);
-            doc.text("📞 3127100080", 10, 60);
+            doc.text(" 3127100080", 10, 60);
 
             // Enlaces útiles
             doc.text("Secciones:", 10, 75);
