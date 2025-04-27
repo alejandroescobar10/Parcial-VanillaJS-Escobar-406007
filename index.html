@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js" defer></script>
+    <title>Mi CV</title>
+</head>
+<body>
+    <section>
+        <div class="card">
+            <div class="avatar-animated-container">
+                <img src="./Assets/ChatGPT_AlejandroEscobar.png" alt="Foto de Alejandro Escobar" class="avatar-animated">
+            </div>
+            
+
+            <div class="description">
+                <h2>Descripción de mi CV </h2>
+                <p>Desarrollador de software apasionado por crear soluciones innovadoras, con enfoque en calidad, eficiencia y aprendizaje continuo..</p>
+            </div>
+            <div class="contact"> 
+                <p>📞 3127100080</p>
+            </div>
+            <div class="links">
+                <a href="./education.html" class="link-card">Educación</a>
+                <a href="./experience.html" class="link-card">Experiencia</a>
+            </div>
+            <section id="contacto">
+                <div class="card">
+                    <h2>Hablemos</h2>
+            
+                    <div class="contact-form">
+                        <textarea id="mensaje" placeholder="Escribe tu mensaje aquí..." rows="6"></textarea>
+                        <button id="enviarMensaje" class="link-card" style="font-weight: bold;">Enviar</button>
+                    </div>
+            
+                    <div class="gif-container">
+                        <img src="./Assets/giphy.gif" alt="Conversación" class="gif">
+                    </div>
+                </div>
+            </section>            
+            <button id="downloadBtn" class="link-card" style="font-weight: bold;">Descargar CV</button>
+        </div>
+    </section>
+</body>
+</html>
+

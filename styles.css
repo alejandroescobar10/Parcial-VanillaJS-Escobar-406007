@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.avatar-animated-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    perspective: 1000px; /* efecto de profundidad */
+}
+
+.avatar-animated {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Animación continua de flotación */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Al pasar el mouse, pequeño zoom y efecto 3D */
+.avatar-animated:hover {
+    transform: scale(1.05) rotateX(5deg) rotateY(5deg);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+.card {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: lightskyblue;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+    margin-bottom: 15px;
+}
+
+.contact {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.link-card {
+    display: inline-block;
+    margin: 15px;
+    padding: 10px 20px;
+    background: lightgray;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.link-card:hover {
+    background-color: #d3d3d3;
+}
+
+.experience-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.experience-item {
+    margin-bottom: 20px;
+}
+
+.experience-details {
+    list-style: none;
+    padding-left: 15px;
+    margin-top: 10px;
+}
+
+.functions-list {
+    list-style: disc;
+    padding-left: 25px;
+}
+
+.title {
+    font-size: 24px;
+    color: #003366;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.education-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.education-item {
+    margin-bottom: 20px;
+}
+
+.education-details {
+    list-style: none;
+    padding-left: 15px;
+    margin-top: 10px;
+}
+
+.card strong {
+    color: #0b5394;
+}
+
+.card em {
+    color: #333;
+    font-style: normal;
+    font-weight: bold;
+}
+#contacto .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#contacto textarea {
+    width: 80%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: none;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+#contacto .gif-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#contacto .gif {
+    width: 250px;
+    border-radius: 12px;
+}
